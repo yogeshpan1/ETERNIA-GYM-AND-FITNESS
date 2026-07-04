@@ -234,22 +234,6 @@ java GymGUI
 
 ---
 
-# 📸 Screenshots
-
-Create an **assets/screenshots** folder and add screenshots like:
-
-```
-assets/
-└── screenshots/
-    ├── home.png
-    ├── add-member.png
-    ├── premium-member.png
-    ├── attendance.png
-    ├── payment.png
-    ├── display-members.png
-```
-
----
 
 # 🎯 Learning Outcomes
 
@@ -293,11 +277,6 @@ Contributions are welcome.
 
 ---
 
-# 📄 License
-
-This project is licensed under the **MIT License**.
-
----
 
 # 👨‍💻 Author
 
