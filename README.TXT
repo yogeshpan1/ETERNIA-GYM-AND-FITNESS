@@ -6,14 +6,11 @@
 
 *A comprehensive desktop application for managing gym memberships, attendance, payments, loyalty rewards, and member records using Object-Oriented Programming principles.*
 
----
-
-![Java](https://img.shields.io/badge/Java-17-orange)
-![Swing](https://img.shields.io/badge/GUI-Java%20Swing-blue)
-![OOP](https://img.shields.io/badge/OOP-Implemented-success)
-![Platform](https://img.shields.io/badge/Platform-Desktop-lightgrey)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-green)
+![Java](https://img.shields.io/badge/Java-17-orange?style=for-the-badge&logo=openjdk)
+![Swing](https://img.shields.io/badge/GUI-Java%20Swing-blue?style=for-the-badge)
+![OOP](https://img.shields.io/badge/OOP-Implemented-success?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Platform-Desktop-lightgrey?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 </div>
 
@@ -23,230 +20,144 @@
 
 **ETERNIA GYM AND FITNESS** is a desktop-based Gym Management System developed using **Java** and **Java Swing**.
 
-The application simplifies gym membership management by providing an intuitive graphical user interface that allows administrators to register members, manage memberships, track attendance, process payments, reward loyalty points, and maintain member records.
+The application provides an intuitive graphical user interface for managing gym members, memberships, attendance, payments, loyalty rewards, and member records.
 
-The project was designed using **Object-Oriented Programming (OOP)** principles and demonstrates concepts such as inheritance, encapsulation, abstraction, polymorphism, file handling, exception handling, collections, and event-driven programming.
+The project demonstrates the practical implementation of **Object-Oriented Programming (OOP)** concepts including **Inheritance**, **Encapsulation**, **Polymorphism**, and **Abstraction**, along with Java Swing GUI development, event handling, collections, exception handling, and file handling.
 
 ---
 
 # ✨ Features
 
-## 👤 Member Registration
+## 👤 Member Management
 
-Register new gym members with complete personal information.
-
-Each member record includes:
-
-- Membership ID
-- Full Name
-- Address
-- Contact Number
-- Email Address
-- Gender
-- Date of Birth
-- Membership Start Date
+- Register new members
+- Update member details
+- Display all registered members
+- Search members
+- Remove member records
 
 ---
 
 ## 🏃 Regular Membership
 
-Manage regular gym members with features including:
-
-- Member Registration
-- Membership Activation
-- Membership Deactivation
+- Register Regular Members
 - Attendance Tracking
-- Loyalty Point Collection
-- Membership Upgrade Eligibility
-- Referral Source Management
-- Membership Reversion
+- Loyalty Points
+- Membership Upgrade
+- Membership Revert
+- Activate Membership
+- Deactivate Membership
 
 ---
 
 ## 💎 Premium Membership
 
-Premium members receive additional management capabilities including:
-
-- Premium Plan Registration
-- Personal Trainer Assignment
+- Register Premium Members
+- Premium Plan Management
+- Personal Trainer Support
+- Discount Calculation
 - Payment Tracking
-- Discount Eligibility
-- Premium Membership Reversion
+- Membership Revert
 
 ---
 
 ## 📅 Attendance Management
 
-Track every member visit.
-
-Features include:
-
-- Attendance Recording
-- Automatic Attendance Counter
-- Loyalty Point Updates
-- Upgrade Eligibility Detection
+- Record attendance
+- Automatically update attendance count
+- Calculate loyalty points
+- Track member activity
 
 ---
 
-## 🎁 Loyalty Rewards
-
-Reward active members through a loyalty points system.
-
-Features:
-
-- Automatic Point Calculation
-- Attendance-based Rewards
-- Progress Tracking
-
----
-
-## 📈 Membership Upgrade
-
-Eligible regular members can upgrade their membership once attendance requirements are satisfied.
-
-Upgrade process includes:
-
-- Eligibility Validation
-- Plan Selection
-- Membership Update
-
----
-
-## 💳 Payment Management
-
-Manage membership payments with multiple payment methods.
+## 💳 Payment System
 
 Supports:
 
 - Cash Payment
 - Online Payment
-- QR Code Payment
+- QR Payment
 
 ---
 
-## 🏷 Discount Calculation
+## 🎁 Loyalty Rewards
 
-Premium members can calculate discounts based on membership rules.
+Automatically rewards members based on attendance.
 
-The application automatically:
+Features include:
 
-- Checks eligibility
-- Calculates discount amount
-- Displays payable amount
-
----
-
-## 🔄 Membership Activation
-
-Activate inactive memberships whenever required.
-
-Features:
-
-- Status Validation
-- Instant Activation
-- Membership State Update
+- Loyalty Point Calculation
+- Attendance Rewards
+- Membership Upgrade Eligibility
 
 ---
 
-## ⛔ Membership Deactivation
+## 💾 File Handling
 
-Temporarily deactivate memberships.
-
-Useful for:
-
-- Membership Suspension
-- Temporary Leave
-- Administrative Control
+- Save member records
+- Load saved records
+- Persistent storage using text files
 
 ---
 
-## 📂 File Management
+## ⚠ Exception Handling
 
-Save and retrieve member information using local files.
-
-Capabilities include:
-
-- Save Member Records
-- Read Existing Records
-- Persistent Data Storage
-
----
-
-## 🔍 Member Search
-
-Quickly retrieve information using Membership ID.
-
-Displays:
-
-- Personal Information
-- Membership Details
-- Attendance
-- Loyalty Points
-- Membership Status
+The application validates user input and handles invalid data gracefully using Java Exception Handling.
 
 ---
 
 # 🖥 User Interface
 
-The application provides an intuitive Java Swing graphical interface.
-
-Main sections include:
+The application contains separate interfaces for different operations.
 
 ```
-Main Menu
+Main Window
 │
-├── Regular Member
-├── Premium Member
-├── Login Panel
-│
-├── Add Member
-├── Display Member
-├── Attendance
-├── Upgrade Membership
+├── Add Regular Member
+├── Add Premium Member
 ├── Activate Membership
 ├── Deactivate Membership
-├── Revert Membership
+├── Attendance
+├── Upgrade Plan
 ├── Payment
-├── Discount Checker
+├── Calculate Discount
+├── Display Members
 ├── Save Records
 └── Read Records
 ```
 
 ---
 
-# 🧠 Object-Oriented Programming Concepts
+# 🧠 Object-Oriented Programming
 
-The project demonstrates core Object-Oriented Programming concepts.
+The application follows an Object-Oriented design.
 
-## 🔹 Inheritance
+### Inheritance
 
 ```
 GymMember
 │
 ├── RegularMember
-│
 └── PremiumMember
 ```
 
-The child classes inherit common functionality from the parent `GymMember` class while implementing their own specialized behaviors.
+---
+
+### Encapsulation
+
+Private variables are accessed using getter and setter methods, ensuring secure data management.
 
 ---
 
-## 🔹 Encapsulation
+### Polymorphism
 
-Private and protected member variables are accessed using getters, setters, and controlled methods to ensure secure data management.
-
----
-
-## 🔹 Polymorphism
-
-Method overriding is used to provide different implementations for attendance tracking and membership behavior.
+Methods are overridden where necessary to provide different implementations for Regular and Premium members.
 
 ---
 
-## 🔹 Abstraction
+### Abstraction
 
-The abstract `GymMember` class defines the common structure and behaviors shared across all member types.
+The parent class defines the common behaviour shared by all member types while allowing subclasses to implement specialized functionality.
 
 ---
 
@@ -255,30 +166,29 @@ The abstract `GymMember` class defines the common structure and behaviors shared
 | Technology | Purpose |
 |------------|----------|
 | Java | Core Programming Language |
-| Java Swing | Desktop GUI |
+| Java Swing | GUI Development |
 | OOP | Software Design |
 | ArrayList | Data Storage |
-| File Handling | Persistent Storage |
-| Exception Handling | Error Management |
+| File Handling | Save & Load Data |
+| Exception Handling | Error Handling |
 | Event Handling | GUI Interaction |
 
 ---
 
 # 📂 Project Structure
 
-```
+```text
 ETERNIA-GYM-AND-FITNESS
 │
 ├── GymMember.java
 ├── RegularMember.java
 ├── PremiumMember.java
 ├── GymGUI.java
-│
-├── MemberDetails.txt
-│
 ├── README.md
-│
-└── Screenshots
+├── assets
+│   ├── screenshots
+│   └── icons
+└── data
 ```
 
 ---
@@ -288,32 +198,35 @@ ETERNIA-GYM-AND-FITNESS
 ## Prerequisites
 
 - Java JDK 17 or above
-- VS Code / IntelliJ IDEA / Eclipse
-- Git
+- Visual Studio Code / IntelliJ IDEA / Eclipse
 
 ---
 
-## Installation
-
-Clone the repository
+## Clone the Repository
 
 ```bash
 git clone https://github.com/yogeshpan1/ETERNIA-GYM-AND-FITNESS.git
 ```
 
-Move into the project directory
+---
+
+## Navigate to the Project
 
 ```bash
 cd ETERNIA-GYM-AND-FITNESS
 ```
 
-Compile the project
+---
+
+## Compile
 
 ```bash
 javac *.java
 ```
 
-Run the application
+---
+
+## Run
 
 ```bash
 java GymGUI
@@ -323,55 +236,48 @@ java GymGUI
 
 # 📸 Screenshots
 
-Add screenshots here.
+Create an **assets/screenshots** folder and add screenshots like:
 
 ```
-screenshots/
-
-├── home.png
-├── regular-member.png
-├── premium-member.png
-├── login.png
-├── attendance.png
-├── payment.png
-├── qr-payment.png
-├── display-member.png
+assets/
+└── screenshots/
+    ├── home.png
+    ├── add-member.png
+    ├── premium-member.png
+    ├── attendance.png
+    ├── payment.png
+    ├── display-members.png
 ```
 
 ---
 
 # 🎯 Learning Outcomes
 
-This project demonstrates practical knowledge of:
+This project demonstrates:
 
 - Java Programming
+- Java Swing GUI Development
 - Object-Oriented Programming
-- GUI Development
 - Event-Driven Programming
 - Collections Framework
-- File Handling
 - Exception Handling
-- Software Design
+- File Handling
 - Desktop Application Development
 
 ---
 
 # 🔮 Future Improvements
 
-Potential future enhancements include:
-
-- SQLite/MySQL Database Integration
+- Database Integration (MySQL / SQLite)
 - User Authentication
 - Admin Dashboard
-- Barcode/QR Member Check-in
-- Membership Expiry Notifications
+- QR Code Check-In
 - Email Notifications
+- Membership Expiry Reminder
 - Payment Gateway Integration
-- Membership Analytics
-- Multi-user Support
+- Analytics Dashboard
+- Cloud Backup
 - Dark Mode
-- Cloud Synchronization
-- Printable Reports
 
 ---
 
@@ -379,19 +285,15 @@ Potential future enhancements include:
 
 Contributions are welcome.
 
-If you'd like to improve this project:
-
 1. Fork the repository
 2. Create a feature branch
 3. Commit your changes
-4. Push the branch
+4. Push to your branch
 5. Open a Pull Request
-
-Bug reports, feature requests, and suggestions are always appreciated.
 
 ---
 
-# 📜 License
+# 📄 License
 
 This project is licensed under the **MIT License**.
 
@@ -401,18 +303,18 @@ This project is licensed under the **MIT License**.
 
 **Yogesh Pant**
 
-BSc (Hons) Computing  
-London Metropolitan University  
-Islington College, Kathmandu
+🎓 BSc (Hons) Computing  
+🏛️ Islington College, Kathmandu  
+🎓 London Metropolitan University
 
-GitHub: https://github.com/yogeshpan1
+GitHub: **https://github.com/yogeshpan1**
 
 ---
 
 <div align="center">
 
-### 🏋️ Building Better Fitness Management Through Java
+### ⭐ If you found this project useful, consider giving it a star!
 
-⭐ If you found this project interesting, consider giving it a star!
+Made with ❤️ using Java
 
 </div>
