@@ -1,0 +1,7 @@
+| ID    | Name            | Location        | Phone        | Email                     | StartDate    | Plan       | Price      | Attendance | Loyalty  | Active | FullPay    | Discount   | NetPaid    |
+| 1     | Asim Bhusal     | Sankhamul       | 9811620232   | bhusalasim@gmail.com      | 1/Jan/2006   | basic      | 6500.00    | 7          | 35.00    | Yes    | 0.00       | 0.00       | 0.00       |
+| 2     | Asim Bhusal     | Sankhamul       | 9811620232   | bhusalasim@gmail.com      | 1/Jan/2006   | basic      | 6500.00    | 7          | 35.00    | Yes    | 0.00       | 0.00       | 0.00       |
+| 3     | Pranisa Bhusal  | Bhaktapur       | 9824609669   | prasim@gmail.com          | 1/Jan/2006   | Premium    | 50000.00   | 0          | 0.00     | No     | 50000.00   | 5000.00    | 45000.00   |
+| 120   | Yogesh Pant     | Tokha           | 986554490    | yogesh@gmail.com          | 1/Jan/2006   | basic      | 6500.00    | 2          | 10.00    | Yes    | 0.00       | 0.00       | 0.00       |
+| 1     | 1               | 1               | 11           | 1                         | 1/Jan/2006   | standard   | 12500.00   | 30         | 150.00   | Yes    | 0.00       | 0.00       | 0.00       |
+| 1     | 1               | 1               | 1            | 1                         | 1/Jan/2006   | basic      | 6500.00    | 0          | 0.00     | No     | 0.00       | 0.00       | 0.00       |
